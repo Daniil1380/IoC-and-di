@@ -9,8 +9,8 @@ public class Cat {
 
     private String name;
 
-    @Autowired
-    @Qualifier(value = "human")
+    @Autowired //внедрение зависимостей
+    @Qualifier(value = "human") //указание, какой нужно бин использовать
     private Brain brain;
 
     public String getName() {

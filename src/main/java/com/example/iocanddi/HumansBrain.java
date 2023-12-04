@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 
 //@Primary
-@Component(value = "human")
+@Component(value = "human") //value - указывает имя создаваемого бина
 public class HumansBrain implements Brain {
 
     @Override
