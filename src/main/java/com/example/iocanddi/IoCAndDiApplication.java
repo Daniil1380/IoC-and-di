@@ -11,12 +11,10 @@ public class IoCAndDiApplication {
         ApplicationContext applicationContext = SpringApplication.run(IoCAndDiApplication.class, args);
 
         Cat cat = (Cat) applicationContext.getBean("supercat");
-        cat = (Cat) applicationContext.getBean("supercat");
-        cat = (Cat) applicationContext.getBean("supercat");
-        cat = (Cat) applicationContext.getBean("supercat");
 
         System.out.println(cat);
 
+        cat.playWithBall();
     }
 
 }
